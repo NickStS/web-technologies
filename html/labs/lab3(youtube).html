@@ -1,0 +1,717 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../../css/youtube-styles.css">
+    <title>Web technology</title>
+</head>
+<body>
+    <div class="name__project">
+        <h1 class="name__project_text">Сайт по Web технологіям. Старцев Микола ТЦР-22</h1>
+        <button class="btn-go-main">
+            <a href="../../index.html">
+                Перейти на головну
+            </a>
+        </button>
+    </div>
+
+    <div class="sidebar">
+        <div class="sidebar__body"> 
+            <ul class="fast__buttons">
+                <li class="link-now">
+                    <a>
+                        <svg class="sidebar_icon">
+                            <use href="../../img/icons.svg#home"></use>
+                        </svg>
+                        <p>Home</p>
+                    </a>
+                </li>
+                <li>
+                    <a>
+                        <svg class="sidebar_icon">
+                            <use href="../../img/icons.svg#shorts"></use>
+                        </svg>
+                        <p>Shorts</p>
+                    </a>
+                </li>
+                <li>
+                    <a>
+                        <svg class="sidebar_icon">
+                            <use href="../../img/icons.svg#subs"></use>
+                        </svg>
+                        <p>Subscriptions</p>
+                    </a>
+                </li>
+                <li>
+                    <a>
+                        <svg class="sidebar_icon">
+                            <use href="../../img/icons.svg#music"></use>
+                        </svg>
+                        <p>YouTube Music</p>
+                    </a>
+                </li>
+            </ul>
+            
+            <div class="line short__line"></div>
+            
+            <ul class="fast__buttons">
+                <li class="btn_you">
+                    <a class="btn">
+                        <span>You</span>
+                        <svg class="you">
+                            <use href="../../img/icons.svg#you"></use>
+                        </svg>
+                    </a>
+                </li>
+                <li>
+                    <a>
+                        <svg class="sidebar_icon">
+                            <use href="../../img/icons.svg#you-channel"></use>
+                        </svg>
+                        <p>Your channel</p>
+                    </a>
+                </li>
+                <li>
+                    <a>
+                        <svg class="sidebar_icon">
+                            <use href="../../img/icons.svg#history"></use>
+                        </svg>
+                        <p>History</p>
+                    </a>
+                </li>
+                <li>
+                    <a>
+                        <svg class="sidebar_icon">
+                            <use href="../../img/icons.svg#videos"></use>
+                        </svg>
+                        <p>Your videos</p>
+                    </a>
+                </li>
+                <li>
+                    <a>
+                        <svg class="sidebar_icon">
+                            <use href="../../img/icons.svg#later"></use>
+                        </svg>
+                        <p>Watch later</p>
+                    </a>
+                </li>
+                <li>
+                    <a>
+                        <svg class="sidebar_icon">
+                            <use href="../../img/icons.svg#downloads"></use>
+                        </svg>
+                        <p>Downloads</p>
+                    </a>
+                </li>
+                <li>
+                    <a>
+                        <svg class="sidebar_icon">
+                            <use href="../../img/icons.svg#more"></use>
+                        </svg>
+                        <p>Show more</p>
+                    </a>
+                </li>
+            </ul>
+            
+            <div class="line"></div>
+            
+            <ul class="fast__buttons">
+                <h3 class="text">Subscriptions</h3>
+                <li>
+                    <a>
+                        <img id="img" draggable="false" class="channel__icon" height="24" width="24" alt=""
+                            src="https://yt3.ggpht.com/ytc/APkrFKa87zcM4esuG5or9jOLhswDERW5F1wK6IyeV3qzsA=s88-c-k-c0x00ffffff-no-rj">
+                        <p>DJI</p>
+                    </a>
+                </li>
+                <li>
+                    <a>
+                        <img id="img" draggable="false" class="channel__icon" height="24" width="24" alt=""
+                            src="https://yt3.ggpht.com/ytc/APkrFKZK717tofKM2KEWnbX5WwtjunQS7OOV7H3oFY8G8g=s88-c-k-c0x00ffffff-no-rj">
+                        <p>DJI Creator</p>
+                    </a>
+                </li>
+                <li>
+                    <a>
+                        <img id="img" draggable="false" class="channel__icon" height="24" width="24" alt=""
+                            src="https://yt3.ggpht.com/ytc/APkrFKbydz9aahNsp29fJSIaWC5oTvy1tzEgjmn4XQym=s88-c-k-c0x00ffffff-no-rj">
+                        <p>QUADRO.ua</p>
+                    </a>
+                </li>
+                <li>
+                    <a>
+                        <img id="img" draggable="false" class="channel__icon" height="24" width="24" alt=""
+                            src="https://yt3.ggpht.com/ytc/APkrFKZEIncUM04qTQcEvRBjRzHHErqA1KwDqgGzE1gD=s88-c-k-c0x00ffffff-no-rj">
+                        <p>QUADRO SERVICE</p>
+                    </a>
+                </li>
+                <li>
+                    <a>
+                        <img id="img" draggable="false" class="channel__icon" height="24" width="24" alt=""
+                            src="https://yt3.ggpht.com/ytc/APkrFKb6-DwS21lbNJfCMGozbS1cODdObSbPaXoOuKtpeQ=s88-c-k-c0x00ffffff-no-rj">
+                        <p>DJI KYIV</p>
+                    </a>
+                </li>
+                <li>
+                    <a>
+                        <img id="img" draggable="false" class="channel__icon" height="24" width="24" alt=""
+                            src="https://yt3.ggpht.com/ytc/APkrFKaMGKh3buAC9uMX8j1PKgBwW4Ulc8AgkRystLaJ=s88-c-k-c0x00ffffff-no-rj">
+                        <p>Человек с Земли</p>
+                    </a>
+                </li>
+                <li>
+                    <a>
+                        <img id="img" draggable="false" class="channel__icon" height="24" width="24" alt=""
+                            src="https://yt3.ggpht.com/hP8GQT5XVCOO-qEOjOzwwcB_eDyYuk3i7sBOOConAI6-Rn-5tVnbLpYzYk2Oi-2ohDvnDh06DA=s88-c-k-c0x00ffffff-no-rj">
+                        <p>Антон Птушкін</p>
+                    </a>
+                </li>
+                <li>
+                    <a>
+                        <svg class="sidebar_icon">
+                            <use href="../../img/icons.svg#more"></use>
+                        </svg>
+                        <p>Show 5 more</p>
+                    </a>
+                </li>
+            </ul>
+            
+            <div class="line"></div>
+            
+            <ul class="fast__buttons">
+                <h3 class="text">Explore</h3>
+                <li>
+                    <a>
+                        <svg class="sidebar_icon">
+                            <use href="../../img/icons.svg#trending"></use>
+                        </svg>
+                        <p>Trending</p>
+                    </a>
+                </li>
+                <li>
+                    <a>
+                        <svg class="sidebar_icon">
+                            <use href="../../img/icons.svg#music"></use>
+                        </svg>
+                        <p>Music</p>
+                    </a>
+                </li>
+                <li>
+                    <a>
+                        <svg class="sidebar_icon">
+                            <use href="../../img/icons.svg#movies"></use>
+                        </svg>
+                        <p>Movies</p>
+                    </a>
+                </li>
+                <li>
+                    <a>
+                        <svg class="sidebar_icon">
+                            <use href="../../img/icons.svg#gaming"></use>
+                        </svg>
+                        <p>Gaming</p>
+                    </a>
+                </li>
+                <li>
+                    <a>
+                        <svg class="sidebar_icon">
+                            <use href="../../img/icons.svg#news"></use>
+                        </svg>
+                        <p>News</p>
+                    </a>
+                </li>
+                <li>
+                    <a>
+                        <svg class="sidebar_icon">
+                            <use href="../../img/icons.svg#sports"></use>
+                        </svg>
+                        <p>Sports</p>
+                    </a>
+                </li>
+                <li>
+                    <a>
+                        <svg class="sidebar_icon">
+                            <use href="../../img/icons.svg#learning"></use>
+                        </svg>
+                        <p>Learning</p>
+                    </a>
+                </li>
+            </ul>
+            
+            <div class="line"></div>
+            
+            <ul class="fast__buttons">
+                <h3 class="text">More from YouTube</h3>
+                <li>
+                    <a>
+                        <svg class="sidebar_icon">
+                            <use href="../../img/icons.svg#you-studio"></use>
+                        </svg>
+                        <p>YouTube Studio</p>
+                    </a>
+                </li>
+                <li>
+                    <a>
+                        <svg class="sidebar_icon">
+                            <use href="../../img/icons.svg#you-music"></use>
+                        </svg>
+                        <p>YouTube Music</p>
+                    </a>
+                </li>
+                <li>
+                    <a>
+                        <svg class="sidebar_icon">
+                            <use href="../../img/icons.svg#you-kids"></use>
+                        </svg>
+                        <p>YouTube Kids</p>
+                    </a>
+                </li>
+            </ul>
+            
+            <div class="line"></div>
+            
+            
+            <ul class="fast__buttons">
+                <li>
+                    <a>
+                        <svg class="sidebar_icon">
+                            <use href="../../img/icons.svg#settings"></use>
+                        </svg>
+                        <p>Settings</p>
+                    </a>
+                </li>
+                <li>
+                    <a>
+                        <svg class="sidebar_icon">
+                            <use href="../../img/icons.svg#rep-history"></use>
+                        </svg>
+                        <p>Report history</p>
+                    </a>
+                </li>
+                <li>
+                    <a>
+                        <svg class="sidebar_icon">
+                            <use href="../../img/icons.svg#help"></use>
+                        </svg>
+                        <p>Help</p>
+                    </a>
+                </li>
+                <li>
+                    <a>
+                        <svg class="sidebar_icon">
+                            <use href="../../img/icons.svg#feedback"></use>
+                        </svg>
+                        <p>Send feedback</p>
+                    </a>
+                </li>
+            </ul>
+            
+            <div class="line"></div>
+            
+            <footer>
+                <ul class="footer__list">
+                    <li class="list-1">
+                        <a>About</a>
+                        <a>Press</a>
+                        <a>Copyright</a>
+                        <a>Contact us</a>
+                        <a>Creators</a>
+                        <a>Advertise</a>
+                        <a>Developers</a>
+                    </li>
+                    
+                    <li class="list-2">
+                        <a>Terms</a>
+                        <a>Privacy</a>
+                        <a>Policy & Safety</a>
+                        <a>How YouTube works</a>
+                        <a>Test new features</a>
+                    </li>
+                </ul>
+            
+                <p class="copyright">© 2023 Google LLC</p>
+            </footer>
+        </div>
+    </div>
+
+    <main>
+        <header class="youtube__header">
+            <div class="sidebar__header">
+                <button class="btn__burger-icon">
+                    <svg class="burger__icon">
+                        <use href="../../img/icons.svg#burger"></use>
+                    </svg>
+                </button>
+                <div class="logo-and-premium">
+                    <a href="https://www.youtube.com/">
+                        <svg class="logo__icon">
+                            <use href="../../img/icons.svg#youtube-logo"></use>
+                        </svg>
+                        <svg class="premium__icon">
+                            <use href="../../img/icons.svg#premium"></use>
+                        </svg>
+                        <span class="country__code">UA</span>
+                    </a>
+                </div>
+            </div>
+            
+            <div class="searchbar__content">
+                <div class="searchbar">
+                    <input type="text" placeholder="Search">
+                    <button class="search_button">
+                        <svg class="search_icon">
+                            <use href="../../img/icons.svg#search"></use>
+                        </svg>
+                    </button>
+                </div>
+                <div class="micro">
+                    <svg class="micro_icon">
+                        <use href="../../img/icons.svg#micro"></use>
+                    </svg>
+                </div>
+            </div>
+
+            <ul class="list__of__icons">
+                <li>
+                    <svg>
+                        <use href="../../img/icons.svg#add-video"></use>
+                    </svg>
+                </li>
+                <li>
+                    <svg>
+                        <use href="../../img/icons.svg#bell"></use>
+                    </svg>
+                </li>
+                <li>
+                    <a href="https://www.youtube.com/channel/UCgFxOEan9KvH-u13iJRV4PA">
+                        <img id="img" draggable="false" class="acc_avatar" alt="Avatar image" height="32" width="32"
+                            src="https://yt3.ggpht.com/yti/ADpuP3Nctdixh2MIYhuIB4r14CI7JJwahXJtxd1dWjvS1w=s88-c-k-c0x00ffffff-no-rj">
+                    </a>
+                </li>
+            </ul>
+
+            <div class="slider">
+                <ul class="slider__list">
+                    <li>
+                        <p class="slider__text">All</p>
+                    </li>
+                    <li>
+                        <p class="slider__text">Gaming</p>
+                    </li>
+                    <li>
+                        <p class="slider__text">Music</p>
+                    </li>
+                    <li>
+                        <p class="slider__text">Drones</p>
+                    </li>
+                    <li>
+                        <p class="slider__text">Counter-Strike 2</p>
+                    </li>
+                    <li>
+                        <p class="slider__text">Mixes</p>
+                    </li>
+                    <li>
+                        <p class="slider__text">Five Nights at Freddy's</p>
+                    </li>
+                    <li>
+                        <p class="slider__text">Half-Life</p>
+                    </li>
+                    <li>
+                        <p class="slider__text">History</p>
+                    </li>
+                    <li>
+                        <p class="slider__text">Camera lens</p>
+                    </li>
+                    <li>
+                        <p class="slider__text">Outer space</p>
+                    </li>
+                    <li>
+                        <p class="slider__text">Gadgets</p>
+                    </li>
+                    <li>
+                        <p class="slider__text">Live</p>
+                    </li>
+                    <li>
+                        <p class="slider__text">Tourist destinations</p>
+                    </li>
+                    <li>
+                        <p class="slider__text">Action-adventure games</p>
+                    </li>
+                    <li>
+                        <p class="slider__text">Electronic Music</p>
+                    </li>
+                    <li>
+                        <p class="slider__text">Comedy</p>
+                    </li>
+                    <li>
+                        <p class="slider__text">Cars</p>
+                    </li>
+                    <li>
+                        <p class="slider__text">Recently uploaded</p>
+                    </li>
+                    <li>
+                        <p class="slider__text">Watched</p>
+                    </li>
+                    <li>
+                        <p class="slider__text">New to you</p>
+                    </li>
+                </ul>
+            </div>
+        </header>
+
+
+        <div class="main__content">
+            <div class="video">
+                <a class="video__link" href="https://www.youtube.com/watch?v=YUvBszNA7uI&pp=ygUwVGlueSBGUFYgRHJvbmVzIOKAkyBUaGUgZWFzaWVzdCB3YXkgdG8gc3RhcnQgRlBW">
+                    <img class="video__prev"
+                        src="https://i.ytimg.com/vi/YUvBszNA7uI/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&amp;rs=AOn4CLBr_1e9UdMRQ3K-3GFR5_VeXL4-ZA">
+                    <div class="description">
+                        <img class="video__avatar-channel"
+                            src="https://yt3.ggpht.com/2EbGg5wqdd61q3-k6gO2aeiqi8zF-Z8YZ28DVfAcdGsVZZsJzQEcFuVAM1aBpxUJGXEoRFlR4P0=s68-c-k-c0x00ffffff-no-rj">
+                        <div class="description__text">
+                            <h1 class="video__name">Tiny FPV Drones – The easiest way to start FPV</h1>
+                            <a class="video__link-channel" href="https://www.youtube.com/@man.fromearth">Man From Earth
+                                <svg class="verificated">
+                                    <use href="../../img/icons.svg#verificated"></use>
+                                </svg>
+                            </a>
+                            <p class="video__info">49K views • 1 month ago</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <div class="video">
+                <a class="video__link" href="https://www.youtube.com/watch?v=6dnqGrSKudM">
+                    <img class="video__prev"
+                        src="https://i.ytimg.com/vi/6dnqGrSKudM/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&amp;rs=AOn4CLD3mMtmp1kSdbxcwz2Nuyj1Bx_yuw">
+                    <div class="description">
+                        <img class="video__avatar-channel"
+                            src="https://yt3.ggpht.com/ytc/APkrFKa87zcM4esuG5or9jOLhswDERW5F1wK6IyeV3qzsA=s68-c-k-c0x00ffffff-no-rj">
+                        <div class="description__text">
+                            <h1 class="video__name">DJI - This is DJI Mavic 3</h1>
+                            <a class="video__link-channel" href="https://www.youtube.com/@DJI">DJI
+                                <svg class="verificated">
+                                    <use href="../../img/icons.svg#verificated"></use>
+                                </svg>
+                            </a>
+                            <p class="video__info">4.3M views • 2 years ago</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <div class="video">
+                <a class="video__link" href="https://youtu.be/75SbiwqW7DM">
+                    <img class="video__prev"
+                        src="https://i.ytimg.com/vi/75SbiwqW7DM/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&amp;rs=AOn4CLAp74Oije-L8Mr0_NjR1dWkEl_JXw">
+                    <div class="description">
+                        <img class="video__avatar-channel"
+                            src="https://yt3.ggpht.com/yWJ2rwKo_BZMkVPzIsuN9h_Kt8IFMhT4joiCt3kzH90q-PDCc9n1oz50GtAI9JvLdoMDFFdl3gc=s68-c-k-c0x00ffffff-no-rj">
+                        <div class="description__text">
+                            <h1 class="video__name">FPV Дрон своїми руками. 1 Частина. Збираємо і паяємо</h1>
+                            <a class="video__link-channel" href="https://www.youtube.com/@E-Drone">Є-Дрон
+                                <svg class="verificated">
+                                    <use href="../../img/icons.svg#verificated"></use>
+                                </svg>
+                            </a>
+                            <p class="video__info">198K views • 1 month ago</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            
+            <div class="video">
+                <a class="video__link" href="https://www.youtube.com/watch?v=ZWls3Zt9C2M">
+                    <img class="video__prev" src="https://i.ytimg.com/vi/ZWls3Zt9C2M/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&amp;rs=AOn4CLAf-2uisw_xZTn6qG79Lr9A4DsOUw">
+                    <div class="description">
+                        <img class="video__avatar-channel" src="https://yt3.ggpht.com/hP8GQT5XVCOO-qEOjOzwwcB_eDyYuk3i7sBOOConAI6-Rn-5tVnbLpYzYk2Oi-2ohDvnDh06DA=s68-c-k-c0x00ffffff-no-rj">
+                        <div class="description__text">
+                            <h1 class="video__name">Бали и почему все от него без ума. Большой Эпизод.</h1>
+                            <a class="video__link-channel" href="https://www.youtube.com/@ptuxermann">Антон Птушкін
+                                <svg class="verificated">
+                                    <use href="../../img/icons.svg#verificated"></use>
+                                </svg>
+                            </a>
+                            <p class="video__info">35M views • 3 years ago</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <div class="video">
+                <a class="video__link" href="https://www.youtube.com/watch?v=UZ5G0tVwBkI&t">
+                    <img class="video__prev" src="https://i.ytimg.com/vi/UZ5G0tVwBkI/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&amp;rs=AOn4CLCOlOLCQA8_UFK7tZGoZI5i9vx88Q">
+                    <div class="description">
+                        <img class="video__avatar-channel" src="https://yt3.ggpht.com/ytc/APkrFKbvX3t8cp04UnMYtfNn_Hv9TeKWYHeWqWdqbd5C8R0=s68-c-k-c0x00ffffff-no-rj">
+                        <div class="description__text">
+                            <h1 class="video__name">GoPro: Introducing HERO12 Black | Everything You Need to Know</h1>
+                            <a class="video__link-channel" href="https://www.youtube.com/@GoPro">GoPro
+                                <svg class="verificated">
+                                    <use href="../../img/icons.svg#verificated"></use>
+                                </svg>
+                            </a>
+                            <p class="video__info">1.4M views • 2 months ago</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <div class="video">
+                <a class="video__link" href="https://youtu.be/C6cgcpfKt3g">
+                    <img class="video__prev" src="https://i.ytimg.com/vi/C6cgcpfKt3g/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&amp;rs=AOn4CLBaKnKJVlf5Aag4QNSxMtzTkka6-Q">
+                    <div class="description">
+                        <img class="video__avatar-channel" src="https://yt3.ggpht.com/axiVaKPN5ybn6mV2tBwq7mY5tAeMmnVq4c3_i74YeY6q5DRiipZNg90m93hz7Fg2je2HVKX0JXc=s68-c-k-c0x00ffffff-no-rj">
+                        <div class="description__text">
+                            <h1 class="video__name">DJI Mavic 3 PRO - Cinematic Video</h1>
+                            <a class="video__link-channel" href="https://www.youtube.com/@DenisBarbas">Denis Barbas
+                                <svg class="verificated">
+                                    <use href="../../img/icons.svg#verificated"></use>
+                                </svg>
+                            </a>
+                            <p class="video__info">236K views • 7 months ago</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <div class="video">
+                <a class="video__link" href="https://youtu.be/7QkQIgwX7yw">
+                    <img class="video__prev" src="https://i.ytimg.com/vi/7QkQIgwX7yw/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&amp;rs=AOn4CLAN3nBB4moh8IqRPuC7P4mX_bxiuA">
+                    <div class="description">
+                        <img class="video__avatar-channel" src="https://yt3.ggpht.com/ytc/APkrFKaMGKh3buAC9uMX8j1PKgBwW4Ulc8AgkRystLaJ=s68-c-k-c0x00ffffff-no-rj">
+                        <div class="description__text">
+                            <h1 class="video__name">DJI Air 3 – Месяц в Норвегии</h1>
+                            <a class="video__link-channel" href="https://www.youtube.com/@man_from_earth">Человек с Земли
+                                <svg class="verificated">
+                                    <use href="../../img/icons.svg#verificated"></use>
+                                </svg>
+                            </a>
+                            <p class="video__info">105K views • 1 month ago</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <div class="video">
+                <a class="video__link" href="https://youtu.be/dQWM1zhNyWQ">
+                    <img class="video__prev"
+                        src="https://i.ytimg.com/vi/dQWM1zhNyWQ/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&amp;rs=AOn4CLAbW3zTS_TP-bgU0o3Eq6RE5BeJww">
+                    <div class="description">
+                        <img class="video__avatar-channel"
+                            src="https://yt3.ggpht.com/mimxKGvg7wIHzcSoSVXObj-g0O3Eoby7Smi4shAlOm1Qzmm8fZuoymgrW-pvZIrQecWLftSm=s68-c-k-c0x00ffffff-no-rj">
+                        <div class="description__text">
+                            <h1 class="video__name">Flying A $16K Hollywood Drone | DJI Inspire 3 Review</h1>
+                            <a class="video__link-channel" href="https://www.youtube.com/@PeterLindgren1">Peter Lindgren
+                                <svg class="verificated">
+                                    <use href="../../img/icons.svg#verificated"></use>
+                                </svg>
+                            </a>
+                            <p class="video__info">548K views • 6 month ago</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <div class="video">
+                <a class="video__link" href="https://youtu.be/1ucIm6g9llg">
+                    <img class="video__prev" src="https://i.ytimg.com/vi/1ucIm6g9llg/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&amp;rs=AOn4CLBlnGR90Kfj5VgRn9WgPfePcjnd3g">
+                    <div class="description">
+                        <img class="video__avatar-channel" src="https://yt3.ggpht.com/ytc/APkrFKa87zcM4esuG5or9jOLhswDERW5F1wK6IyeV3qzsA=s68-c-k-c0x00ffffff-no-rj">
+                        <div class="description__text">
+                            <h1 class="video__name">DJI Enterprise - Introducing the DJI M30 Series</h1>
+                            <a class="video__link-channel" href="https://www.youtube.com/@DJI">DJI
+                                <svg class="verificated">
+                                    <use href="../../img/icons.svg#verificated"></use>
+                                </svg>
+                            </a>
+                            <p class="video__info">2.1M views • 1 year ago</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <div class="video">
+                <a class="video__link" href="https://youtu.be/8x46Y_EVDlM">
+                    <img class="video__prev" src="https://i.ytimg.com/vi/8x46Y_EVDlM/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&amp;rs=AOn4CLAYvITZ6Y9U0tsTksE62Dcx63QlJQ">
+                    <div class="description">
+                        <img class="video__avatar-channel" src="https://yt3.ggpht.com/aOsaa3TLW0VADksy_X1b8h6sC1r2o7Eanar_0xatwVaz0lg34HGozjgb65JpFCeSmv-TAvBUvQ=s68-c-k-c0x00ffffff-no-rj">
+                        <div class="description__text">
+                            <h1 class="video__name">Winter Carpathians from a drone. Artistic photography. Synevyr, Vorokhta, Tatars....</h1>
+                            <a class="video__link-channel" href="https://www.youtube.com/@SMAKADRON">SMAKADRON
+                                <svg class="verificated">
+                                    <use href="../../img/icons.svg#verificated"></use>
+                                </svg>
+                            </a>
+                            <p class="video__info">7.6K views • 1 year ago</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <div class="video">
+                <a class="video__link" href="https://youtu.be/zyZAMR56mXY">
+                    <img class="video__prev"
+                        src="https://i.ytimg.com/vi/zyZAMR56mXY/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&amp;rs=AOn4CLCx55QQ4cu0X-R7LP2CXurSkWrVfg">
+                    <div class="description">
+                        <img class="video__avatar-channel"
+                            src="https://yt3.ggpht.com/hP8GQT5XVCOO-qEOjOzwwcB_eDyYuk3i7sBOOConAI6-Rn-5tVnbLpYzYk2Oi-2ohDvnDh06DA=s68-c-k-c0x00ffffff-no-rj">
+                        <div class="description__text">
+                            <h1 class="video__name">Norway. Rich and extremely beautiful. Big Episode.</h1>
+                            <a class="video__link-channel" href="https://www.youtube.com/@ptuxermann">Антон Птушкін
+                                <svg class="verificated">
+                                    <use href="../../img/icons.svg#verificated"></use>
+                                </svg>
+                            </a>
+                            <p class="video__info">28M views • 2 years ago</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <div class="video">
+                <a class="video__link" href="https://youtu.be/3gCKcq4THNQ">
+                    <img class="video__prev" src="https://i.ytimg.com/vi/3gCKcq4THNQ/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&amp;rs=AOn4CLCj6-ZJbFEvYLqhAwi7Lud3mXn9Vw">
+                    <div class="description">
+                        <img class="video__avatar-channel" src="https://yt3.ggpht.com/wU15kRZ72rkjI__88cpqfGtGvdbsVvqacNA1Aa7NVcy0abLZ25TYVRCAf-MjYhCfwLiTp5bJZeg=s68-c-k-c0x00ffffff-no-rj">
+                        <div class="description__text">
+                            <h1 class="video__name">Introducing Alpha 9 III | Sony | α</h1>
+                            <a class="video__link-channel" href="https://www.youtube.com/@ImagingbySony">Sony | Camera Channel
+                                <svg class="verificated">
+                                    <use href="../../img/icons.svg#verificated"></use>
+                                </svg>
+                            </a>
+                            <p class="video__info">543K views • 3 weeks ago</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <div class="video">
+                <a class="video__link" href="https://youtu.be/Z3Hhtam-dmo">
+                    <img class="video__prev" src="https://i.ytimg.com/vi/Z3Hhtam-dmo/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&amp;rs=AOn4CLDSdiaq8K8-1u7RfGQOP_Fq6rsDsQ">
+                    <div class="description">
+                        <img class="video__avatar-channel" src="https://yt3.ggpht.com/ytc/APkrFKYCwjBgUOOoG6OnTPxK6HGiOHPJKF6V2mhoEOpAGg=s68-c-k-c0x00ffffff-no-rj">
+                        <div class="description__text">
+                            <h1 class="video__name">Нічний Київ / Kiev From Dusk Till Dawn / KYIV from a drone 4k</h1>
+                            <a class="video__link-channel" href="https://www.youtube.com/@FLYUA_Kyiv">FLYUA
+                                <svg class="verificated">
+                                    <use href="../../img/icons.svg#verificated"></use>
+                                </svg>
+                            </a>
+                            <p class="video__info">138K views • 2 years ago</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            
+        </div>
+
+    </main>
+</body>
+</html>
