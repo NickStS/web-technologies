@@ -12,7 +12,7 @@
     --primary-text-color: #212121;
     --accent-color: #2196F3;
     --primary-black-color: #000000;
-    --pimary-gray-color: #2F303A;
+    --primary-gray-color: #2F303A;
     --primary-eee-color: #EEEEEE;
     --primary-seventy-color: #757575;
     --primary-hr-color: #ECECEC;
@@ -24,7 +24,8 @@
     --primary-subscribe-color: rgba(255, 255, 255, 0.3);
     --primary-subshadow-color: rgba(0, 0, 0, 0.15);
     --primary-blue-color: #92C5FF;
-    --pimary-red-color: #FF9191;
+    --primary-red-color: #FF9191;
+    --primary-29-color: #292929;
 }
 
 
@@ -270,12 +271,13 @@ ul {
 
 
 .body__main {
-    width: 1000px;
+    width: 75%;
     height: auto;
     margin: auto;
     margin-top: 25px;
     margin-bottom: 25px;
     border: 1px solid var(--gray-color);
+    background-color: var(--primary-29-color);
 }
 
 .planner__header {
@@ -290,8 +292,8 @@ ul {
     appearance: none;
     width: 16px;
     height: 15px;
-    background-image: url('data:image/svg+xml,%3Csvg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg"%3E%3Cpath d="M14.2222 1.66667V13.3333H1.77778V1.66667H14.2222ZM14.2222 0H1.77778C0.8 0 0 0.75 0 1.66667V13.3333C0 14.25 0.8 15 1.77778 15H14.2222C15.2 15 16 14.25 16 13.3333V1.66667C16 0.75 15.2 0 14.2222 0Z" fill="%23212121"/%3E%3C/svg%3E');
-    fill: var(--primary-text-color);
+    background-image: url('data:image/svg+xml,%3Csvg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg"%3E%3Cpath d="M14.2222 1.66667V13.3333H1.77778V1.66667H14.2222ZM14.2222 0H1.77778C0.8 0 0 0.75 0 1.66667V13.3333C0 14.25 0.8 15 1.77778 15H14.2222C15.2 15 16 14.25 16 13.3333V1.66667C16 0.75 15.2 0 14.2222 0Z" fill="%23bbbbbb"/%3E%3C/svg%3E');
+    fill: var(--gray-color);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -314,10 +316,21 @@ h3 {
     margin: 0;
 }
 
+ul {
+    padding: 0;
+}
+
+input {
+    color: var(--white-color);
+}
 
 
 .name {
-    font-size: 35px;
+    font-size: 30px;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: 20px;
+    color: var(--primary-eee-color);
 }
 
 .header__list1 {
@@ -326,10 +339,17 @@ h3 {
     margin: 0;
     margin-top: 20px;
     margin-bottom: 5px;
+    margin-right: 55px;
 }
 
 .header__list1>li {
     display: flex;
+}
+
+.header__list1>li>h3 {
+    display: flex;
+    align-items: center;
+    color: var(--primary-eee-color);
 }
 
 .header__list1>li:first-child {
@@ -339,8 +359,11 @@ h3 {
 .header__list1>li>input {
     width: 100px;
     height: 20px;
+    margin: 0;
+    padding: 0;
     margin-left: 5px;
-    background-color: var(--primary-background-color);
+    margin-top: 5px;
+    background-color: var(--primary-29-color);
     outline: none;
     border: none;
     border-bottom: 1px solid var(--p-color);
@@ -352,11 +375,13 @@ h3 {
     margin: 0;
     margin-top: 20px;
     margin-bottom: 5px;
+    margin-right: 8px;
 }
 
 .header__list2>li {
     display: flex;
     justify-content: flex-end;
+    color: var(--white-color);
 }
 
 
@@ -366,4 +391,88 @@ h3 {
 
 .planner__list {
     border-right: 1px solid var(--gray-color);
+    width: 320px;
+    padding-left: 20px;
 }
+
+.planner__list>h3 {
+    color: var(--primary-eee-color);
+}
+
+.todo {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 5px;
+    margin-right: 10px;
+    color: var(--primary-eee-color);
+}
+
+.input__list {
+    height: 15px;
+    width: 80%;
+    margin: 0;
+    margin-bottom: 10px;
+    padding: 0;
+    padding-left: 25px;
+    background-color: var(--primary-29-color);
+    outline: none;
+    border: none;
+    border-bottom: 1px solid var(--p-color);
+}
+
+.check-absolute {
+    position: absolute;
+    margin: 0;
+}
+
+.list-in-list {
+    margin-bottom: 50px;
+}
+
+
+
+.week {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(30%, 1fr));
+}
+
+.day {
+    display: flex;
+    border: 1px solid var(--p-color);
+}
+
+.day:last-child {
+    justify-content: end;
+}
+
+.day>h3 {
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    color: var(--white-color);
+}
+
+.day>input {
+    margin-top: 10px;
+    margin-right: 10px;
+}
+
+.w__day {
+    display: flex;
+    border: 1px solid var(--p-color);
+    height: 49.55%;
+}
+
+.w__day>h3 {
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    color: var(--white-color);
+}
+
+.w__day>input {
+    margin-top: 10px;
+    margin-right: 10px;
+}
+

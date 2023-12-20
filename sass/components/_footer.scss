@@ -1,0 +1,89 @@
+@import "../utils/_variables";
+
+.footer {
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+
+    &__list {
+        display: flex;
+        padding: 0;
+        list-style: none;
+        justify-content: space-around;
+
+        &__el {
+            &__logo {
+                margin: 0;
+                margin-top: auto;
+                margin-bottom: auto;
+                color: $white-color;
+                text-decoration: none;
+                font-size: 24px;
+                font-weight: 900;
+
+                &__green-text {
+                    color: $green-color;
+                }
+            }
+
+            &__join {
+                margin-top: 0;
+                display: flex;
+                justify-content: center;
+            }
+
+            &__network {
+                display: flex;
+                padding: 0;
+                list-style: none;
+
+                &__el {
+                    width: 40px;
+                    height: 40px;
+                    border-radius: 50%;
+                    background: $primary-footer-color;
+                    margin-right: 10px;
+
+                    &:hover,
+                    &:focus {
+                        background-color: $green-color;
+                        transition-duration: 250ms;
+                        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+                    }
+
+                    &:last-child {
+                        margin-right: 0px;
+                    }
+
+                    &__a {
+                        &__svg {
+                        width: 39px;
+                        height: 39px;
+                        padding: 8px;
+                        fill: $white-color;
+                    }
+                    }
+                }
+            }
+
+            &__address {
+
+                &__link-text,
+                &__link-text_green {
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 14px;
+                    line-height: 24px;
+                }
+
+                &__link-text {
+                    color: $gray-color;
+                }
+
+                &__link-text_green {
+                    color: $green-color;
+                }
+            }
+        }
+    }
+}

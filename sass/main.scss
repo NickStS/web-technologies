@@ -1,0 +1,36 @@
+@import "./utils/_variables";
+@import "./components/widget";
+@import "./components/header";
+@import "./components/content";
+@import "./components/footer";
+
+body {
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    background-color: $primary-background-color;
+    overflow-x: hidden;
+}
+
+p {
+    color: $p-color;
+}
+
+.main {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.body__main {
+    width: 1400px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
